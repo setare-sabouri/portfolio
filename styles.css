@@ -9,22 +9,32 @@
 body {
     font-family: 'Karma', serif;
     font-size: 1rem;
-    background-color: black;
     color: white;
     height: 100vh;
 }
 
+header {
+    background-color: black;
+}
+
 .image-wrapper,
 .info-wrapper {
-    animation: fadeIn 5s;
+    background-color: black;
 }
 
 .image-wrapper {
     text-align: center;
+    background-color: black;
 }
 
 .image-wrapper img {
     border-radius: 1rem;
+    animation: fadeIn 5s;
+}
+
+.hobbies {
+    background-color: white;
+    color: black;
 }
 
 @keyframes fadeIn {
