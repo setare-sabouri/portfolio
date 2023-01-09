@@ -11,11 +11,10 @@ body {
     font-size: 1rem;
     color: white;
     height: 100vh;
+    background-color: black;
+
 }
 
-header {
-    background-color: black;
-}
 
 .image-wrapper,
 .info-wrapper {
