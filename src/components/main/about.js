@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./main.css"
 export const About = () => {
     return (
         <main class="row align-items-center justify-content-between">
