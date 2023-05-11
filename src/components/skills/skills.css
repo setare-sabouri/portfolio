@@ -1,0 +1,22 @@
+.container {
+    background-color: black;
+}
+
+
+.card {
+    height: 100%;
+}
+
+.card-title {
+    color: black;
+}
+
+.progress {
+    height: 1.5rem;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    font-size: 0.8rem;
+    background-color: #007bff;
+}

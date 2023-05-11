@@ -22,6 +22,5 @@ export const About = () => {
                     alt="photo of setare"
                 />
             </div>
-            <div class="hobbies"></div>
         </main>)
 }
