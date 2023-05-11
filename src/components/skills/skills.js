@@ -3,7 +3,7 @@ import skillsData from "../../SkillsData";
 import "./skills.css"
 export const Skills = () => {
     return (
-        <div className="container ">
+        <div className="container">
             <h2 className="text-center mb-4">Skills</h2>
             <div className="row">
                 {skillsData.map((skill, index) => (
