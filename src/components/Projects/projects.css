@@ -1,0 +1,45 @@
+.projects {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px;
+}
+
+.carousel-item {
+    transition: all 0.3s ease-in-out;
+    filter: brightness(50%);
+    margin: 0 auto;
+}
+
+.carousel-item:hover {
+    filter: brightness(100%);
+}
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    color: greenyellow;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.carousel-caption {
+    text-align: left;
+}
+
+.carousel-caption h3 {
+    margin-top: 0;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+}
