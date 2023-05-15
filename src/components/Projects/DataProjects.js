@@ -9,11 +9,11 @@ const projects = [
     },
     {
         id: 2,
-        title: "Project 2",
+        title: "Currency Exchange",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        previewImage: "project2-preview.jpg",
+        previewImage: "/projectImages/Currency.png",
         fullImage: "project2-full.jpg",
-        url: "https://www.project2.com"
+        url: "https://currencyconvertfrankfurter.netlify.app/"
     },
     {
         id: 3,
