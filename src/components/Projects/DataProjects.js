@@ -17,11 +17,11 @@ const projects = [
     },
     {
         id: 3,
-        title: "Project 3",
+        title: "Björnbacka",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        previewImage: "project3-preview.jpg",
+        previewImage: "/projectImages/Björnbacka.png",
         fullImage: "project3-full.jpg",
-        url: "https://www.project3.com"
+        url: "https://bjornbacka-9ffo.vercel.app/"
     }
 ];
 

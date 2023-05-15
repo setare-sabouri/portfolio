@@ -18,11 +18,10 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     filter: invert(1);
-    color: greenyellow;
-    background-color: #ffffff;
+    background-color: #000000;
     border-color: #ffffff;
 }
 
