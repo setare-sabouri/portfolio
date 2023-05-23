@@ -6,6 +6,7 @@
 
 .carousel-inner {
     border-radius: 1rem;
+    border: solid 1px;
 }
 
 .carousel {
