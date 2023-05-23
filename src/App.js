@@ -4,7 +4,7 @@ import { Skills } from "./components/skills/skills";
 import { DownloadButton } from "./components/Resume/resume";
 import { Projects } from "./components/Projects/Projects";
 function App() {
-  const cvURL = process.env.PUBLIC_URL + "/CV.pdf";
+  const cvURL = process.env.PUBLIC_URL + "/resume.pdf";
   return (
     <>
       <div className="container-fluid h-100 " >
