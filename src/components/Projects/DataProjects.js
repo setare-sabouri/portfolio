@@ -5,7 +5,8 @@ const projects = [
         description: "Shopping / Nike Shoes",
         previewImage: "/projectImages/Nike-Shoes.png",
         fullImage: "project1-full.jpg",
-        url: "https://react-nike-website.vercel.app/"
+        url: "https://react-nike-website.vercel.app/",
+        githubUrl: "https://react-nike-website.vercel.app/"
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const projects = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         previewImage: "/projectImages/Currency.png",
         fullImage: "project2-full.jpg",
-        url: "https://currencyconvertfrankfurter.netlify.app/"
+        url: "https://currencyconvertfrankfurter.netlify.app/",
+        githubUrl: "https://react-nike-website.vercel.app/"
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const projects = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         previewImage: "/projectImages/Björnbacka.png",
         fullImage: "project3-full.jpg",
-        url: "https://bjornbacka-9ffo.vercel.app/"
+        url: "https://bjornbacka-9ffo.vercel.app/",
+        githubUrl: "https://react-nike-website.vercel.app/"
     }
 ];
 

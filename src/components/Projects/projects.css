@@ -29,12 +29,10 @@
 
 .carousel-control-prev {
     left: 1rem;
-    /* Adjust the left value to fine-tune the horizontal position */
 }
 
 .carousel-control-next {
     right: 1rem;
-    /* Adjust the right value to fine-tune the horizontal position */
 }
 
 .carousel-caption {
@@ -47,4 +45,34 @@
 
 .carousel-caption p {
     margin-bottom: 0;
+}
+
+
+.github-icon {
+    fill: #5600cd;
+    background-color: rgba(24, 8, 8, 0.844);
+    border-radius: 90%;
+    font-size: 4rem;
+    margin: 1rem 0;
+    display: block;
+    text-align: center;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
