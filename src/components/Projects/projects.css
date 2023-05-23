@@ -1,7 +1,15 @@
 .projects {
-    background-color: #1a1a1a;
+    background-color: transparent;
     color: #ffffff;
-    padding: 50px;
+    padding: 50px 0;
+}
+
+.carousel-inner {
+    border-radius: 1rem;
+}
+
+.carousel {
+    padding: 1rem;
 }
 
 .carousel-item {
@@ -13,8 +21,6 @@
 .carousel-item:hover {
     filter: brightness(100%);
 }
-
-
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -28,19 +34,20 @@
 }
 
 .carousel-control-prev {
-    left: 1rem;
+    left: 1.5rem;
 }
 
 .carousel-control-next {
-    right: 1rem;
+    right: 1.5rem;
 }
 
 .carousel-caption {
     text-align: left;
-}
+    width: fit-content;
+    background-color: rgba(7, 26, 20, 0.615);
+    padding: 1rem;
+    border-radius: 1rem;
 
-.carousel-caption h3 {
-    margin-top: 0;
 }
 
 .carousel-caption p {
@@ -74,5 +81,25 @@
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .github-icon {
+        font-size: 1.5rem;
+
+    }
+
+    .carousel-caption h3 {
+        font-size: 1rem;
     }
 }

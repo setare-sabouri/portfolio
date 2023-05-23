@@ -21,8 +21,8 @@ function Projects() {
                             />
                         </a>
                         <Carousel.Caption>
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
+                            <h3 style={{ color: project.githubColor }}>{project.title}</h3>
+                            {/* <p>{project.description}</p> */}
                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                                 <FaGithub className="github-icon" style={{ fill: project.githubColor }} />
                             </a>
