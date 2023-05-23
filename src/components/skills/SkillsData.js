@@ -6,6 +6,14 @@ const skillsData = [
     { name: "Git / Github", percentage: 90 },
     { name: "Bootstrap", percentage: 95 },
     { name: "REST", percentage: 80 },
+    { name: "THREE.js", percentage: 60 },
+    { name: "DOM Manipulation", percentage: 80 },
+    { name: "Responsive Design", percentage: 75 },
+    { name: "Debugging", percentage: 90 },
+
+
+
+
 
 ];
 export default skillsData;
