@@ -18,17 +18,23 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     filter: invert(1);
+    top: 50%;
     background-color: #000000;
     border-color: #ffffff;
+    border-radius: 1rem;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: transparent;
-    border-color: #ffffff;
+.carousel-control-prev {
+    left: 1rem;
+    /* Adjust the left value to fine-tune the horizontal position */
+}
+
+.carousel-control-next {
+    right: 1rem;
+    /* Adjust the right value to fine-tune the horizontal position */
 }
 
 .carousel-caption {
