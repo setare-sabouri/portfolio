@@ -5,3 +5,8 @@ button span {
 .nav-link i {
     color: rgb(242, 242, 255);
 }
+
+.nav-link:hover .fa_custom {
+    transform: rotateY(360deg);
+    transition: transform 0.6s ease-in-out;
+}

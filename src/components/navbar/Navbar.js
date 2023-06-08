@@ -27,7 +27,6 @@ export const Navbar = () => {
                         <a className="nav-link" href="https://www.behance.net/setarehsaboor"><i
                             className="fa fa-behance fa-2x fa_custom"></i></a>
                     </li>
-
                 </ul>
             </div>
         </nav>
