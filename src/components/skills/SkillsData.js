@@ -11,6 +11,7 @@ const skillsData = [
     { name: "Responsive Design", percentage: 75 },
     { name: "Debugging", percentage: 90 },
     { name: "Flutter", percentage: 40 },
+    
 
 
 
