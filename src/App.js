@@ -12,7 +12,7 @@ function App() {
         <About />
         <Projects />
         <Skills />
-        <DownloadButton fileURL={cvURL} />
+        {/* <DownloadButton fileURL={cvURL} /> */}
       </div >
 
     </>
