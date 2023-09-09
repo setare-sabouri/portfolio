@@ -10,12 +10,7 @@ const skillsData = [
     { name: "DOM Manipulation", percentage: 80 },
     { name: "Responsive Design", percentage: 75 },
     { name: "Debugging", percentage: 90 },
-    { name: "Flutter", percentage: 40 },
-    
-
-
-
-
+    { name: "Typescript", percentage: 60 },
 
 ];
 export default skillsData;

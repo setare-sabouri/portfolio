@@ -14,9 +14,9 @@ export const About = () => {
             <div class="image-wrapper col-sm-10 col-md-6 col-lg-6 col-xl-6">
                 <img
                     class="img-fluid mb-5"
-                    width="400"
-                    height="400"
-                    src="./images/setare-Image.jpg"
+                    width="800"
+                    height="800"
+                    src="./images/setareB&W.jpg"
                     alt="photo of setare"
                 />
             </div>
