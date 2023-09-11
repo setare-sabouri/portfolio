@@ -1,3 +1,7 @@
+nav {
+    height: 20vh;
+    z-index: 10;
+}
 button span {
     color: white;
 }

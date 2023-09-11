@@ -1,0 +1,34 @@
+@media screen and (max-width: 480px) {
+    .content-on-blur h1,
+    p {
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+    }
+    .image-blur {
+        filter: blur(50px);
+    }
+    .image-wrapper {
+        position: absolute;
+        width: 135%;
+        left: -33%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .right-head {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .image-wrapper {
+        position: absolute;
+        width: 135%;
+        left: -25%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .right-head {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

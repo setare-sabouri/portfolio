@@ -49,13 +49,11 @@
     background-color: rgba(7, 26, 20, 0.615);
     padding: 1rem;
     border-radius: 1rem;
-
 }
 
 .carousel-caption p {
     margin-bottom: 0;
 }
-
 
 .github-icon {
     fill: #7707a6;
@@ -67,7 +65,6 @@
     text-align: center;
     animation: pulse 2s ease-in-out infinite;
 }
-
 
 @keyframes pulse {
     0% {
@@ -86,9 +83,7 @@
     }
 }
 
-
 @media (max-width: 576px) {
-
     .carousel-control-prev,
     .carousel-control-next {
         width: 2rem;
@@ -98,7 +93,6 @@
 
     .github-icon {
         font-size: 1.5rem;
-
     }
 
     .carousel-caption h3 {

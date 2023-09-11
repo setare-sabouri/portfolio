@@ -11,6 +11,8 @@ const skillsData = [
     { name: "Responsive Design", percentage: 75 },
     { name: "Debugging", percentage: 90 },
     { name: "Typescript", percentage: 60 },
+    { name: "Next.js", percentage: 60 },
+
 
 ];
 export default skillsData;
