@@ -7,7 +7,7 @@ export const About = () => {
             <div class="image-wrapper col-sm-6 col-md-6 col-lg-6 col-xl-6">
                 <img
                     class="img-fluid"
-                    src="./images/setareB&W.jpg"
+                    src="./images/setarebw.jpg"
                     alt="photo of setare"
                 />
             </div>
