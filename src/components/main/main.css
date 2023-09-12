@@ -34,7 +34,7 @@ main {
 .right-head {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }
 
@@ -47,7 +47,11 @@ main {
     left: 70%;
     transform: translate(-50%, -50%);
 }
-
+.content-on-blur h1,
+p {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
 /* .image-wrapper:hover .image-blur {
     filter: blur(1px);
 } */

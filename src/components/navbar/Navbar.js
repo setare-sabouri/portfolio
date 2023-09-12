@@ -4,7 +4,7 @@ import "./navbar.css"
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg">
-            <h1>Setare</h1>
+            <h1>Setareh Sabouri</h1>
             <button className="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
