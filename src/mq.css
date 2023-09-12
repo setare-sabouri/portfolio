@@ -9,8 +9,8 @@
     }
     .image-wrapper {
         position: absolute;
-        width: 135%;
-        left: -33%;
+        width: 177%;
+        left: -53%;
     }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
