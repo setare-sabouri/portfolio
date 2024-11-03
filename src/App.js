@@ -3,6 +3,7 @@ import { About } from "./components/main/about";
 import { Skills } from "./components/skills/skills";
 import { DownloadButton } from "./components/Resume/resume";
 import { Projects } from "./components/Projects/Projects";
+import { ThreeText } from "./components/ThreeText/ThreeText"
 import './general.css'
 function App() {
   const cvURL = process.env.PUBLIC_URL + "/resume.pdf";
@@ -11,6 +12,7 @@ function App() {
       <div className=" container-fluid h-100 " >
         <Navbar />
         <div className="about">
+          <ThreeText />
           <About />
         </div>
         <Projects />
