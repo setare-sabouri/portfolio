@@ -1,18 +1,16 @@
-import React from 'react'
-import "./ThreeText.scss"
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import Box from './Box';
+import './ThreeText.scss';
+
 
 export const ThreeText = () => {
 
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate('/main');
-    };
     return (
-        <>
-            <canvas class="webgl"></canvas>
-            <button onClick={handleClick}>Enter Site</button>
-        </>
-    )
-}
+        <Canvas camera={{ position: [0, 0, 3], fov: 75 }}  >
+            <OrbitControls enableDamping />
+            <Box />
+        </Canvas>
+    );
+};

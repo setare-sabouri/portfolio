@@ -1,10 +1,8 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
-.webgl {
+canvas {
   background-color: $canvas-color;
-}
-
-button {
-  @include button-styles($button-color, $text-color);
+  width: 100vw;
+  height: 100vh;
 }
