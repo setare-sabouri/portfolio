@@ -1,6 +1,6 @@
 import React from 'react'
 import "./main.css"
-import "./../../mq.css"
+import "./mq.css"
 export const About = () => {
     return (
         <main >
