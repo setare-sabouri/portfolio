@@ -12,7 +12,7 @@ export const ThreeText = () => {
             <OrbitControls enableDamping />
             <Suspense fallback={null}>
                 <TextMesh />
-
+                <axesHelper />
             </Suspense>
         </Canvas>
 

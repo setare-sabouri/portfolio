@@ -1,17 +1,32 @@
-import React from "react";
-import { extend } from "@react-three/fiber";
+import React, { useRef, useEffect } from "react";
+import { extend, useFrame } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/Addons.js";
 import { TextGeometry } from "three/examples/jsm/Addons.js";
 import Karma from '../../styles/fonts/Karma_Bold.json'
-import { height } from "@fortawesome/free-solid-svg-icons/fa0";
+import { textProps } from "../GUI/GUI";
+
 
 extend({ TextGeometry })
+
 const TextMesh = () => {
-    const font = new FontLoader().parse(Karma)
+    const font = new FontLoader().parse(Karma);
+    const meshRef = useRef();
+
+    // Update the geometry dynamically whenever textProps changes
+    useFrame(() => {
+        if (meshRef.current) {
+            meshRef.current.geometry.dispose(); // Clean up old geometry
+            meshRef.current.geometry = new TextGeometry(
+                textProps.message,
+                { font, size: textProps.size, height: textProps.height }
+            );
+            meshRef.current.material.color.set(textProps.color);
+
+        }
+    });
+
     return (
-        <mesh>
-            <textGeometry args={['Hi im Setare', { font, size: 2, height: 1 }]} />
-        </mesh >
+        <mesh ref={meshRef} position={[-9, 0, 0]} />
     );
 };
 
