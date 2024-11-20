@@ -1,8 +1,9 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import TextMesh from './TextMesh';
+import TextGeo from './TextGeo.js';
 import './IntroText.scss';
+import "../../utils/GUI.js"
 
 
 export const IntroText = () => {
@@ -11,7 +12,7 @@ export const IntroText = () => {
         <Canvas>
             <OrbitControls enableDamping />
             <Suspense fallback={null}>
-                <TextMesh />
+                <TextGeo />
                 <axesHelper />
             </Suspense>
         </Canvas>

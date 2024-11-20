@@ -1,23 +1,28 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { extend, useFrame } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/Addons.js";
 import { TextGeometry } from "three/examples/jsm/Addons.js";
-import Karma from '../../fonts/Karma_Bold.json'
-import { textProps } from "../GUI/GUI";
+import Karma from '../../fonts/Space.json'
+import useTextPropsStore from "../../utils/store";
 
+extend({ TextGeometry }) //to get the textgeometry to compile
 
-extend({ TextGeometry })
-
-const TextMesh = () => {
+const TextGeo = () => {
     const font = new FontLoader().parse(Karma);
     const meshRef = useRef();
 
+    const { textProps } = useTextPropsStore()
     useFrame(() => {
+
         if (meshRef.current) {
             meshRef.current.geometry.dispose(); // Clean up old geometry
             meshRef.current.geometry = new TextGeometry(
                 textProps.message,
-                { font, size: textProps.size, height: textProps.height }
+                {
+                    font,
+                    size: textProps.size,
+                    depth: textProps.depth
+                }
             );
             meshRef.current.material.color.set(textProps.color);
 
@@ -25,8 +30,8 @@ const TextMesh = () => {
     });
 
     return (
-        <mesh ref={meshRef} position={[-9, 0, 0]} />
+        <mesh ref={meshRef} position={[-3, 2, 0]} />
     );
 };
 
-export default TextMesh;
+export default TextGeo;

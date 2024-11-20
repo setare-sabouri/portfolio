@@ -2,7 +2,6 @@
 import React from 'react';
 import { IntroText } from '../components/IntroText/IntroText';
 import { useNavigate } from 'react-router-dom';
-
 function LandingPage() {
 
     const navigate = useNavigate();
