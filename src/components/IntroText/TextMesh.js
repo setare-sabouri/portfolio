@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { extend, useFrame } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/Addons.js";
 import { TextGeometry } from "three/examples/jsm/Addons.js";
-import Karma from '../../styles/fonts/Karma_Bold.json'
+import Karma from '../../fonts/Karma_Bold.json'
 import { textProps } from "../GUI/GUI";
 
 
@@ -12,7 +12,6 @@ const TextMesh = () => {
     const font = new FontLoader().parse(Karma);
     const meshRef = useRef();
 
-    // Update the geometry dynamically whenever textProps changes
     useFrame(() => {
         if (meshRef.current) {
             meshRef.current.geometry.dispose(); // Clean up old geometry
