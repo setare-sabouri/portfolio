@@ -19,4 +19,3 @@ textTweaks.addColor(textProps, "color").onChange((value) => {
     setTextProps({ color: value })
 })
 
-export default gui 
