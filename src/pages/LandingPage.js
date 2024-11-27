@@ -9,7 +9,7 @@ function LandingPage() {
 
     return (
         <Canvas >
-            <Suspense fallback={null}>
+            <Suspense fallback={<div>Sorry no WebGL supported!</div>}>
                 <Environment preset="sunset" background />
                 <IntroText />
                 <Button />
