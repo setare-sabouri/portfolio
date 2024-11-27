@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useMemo } from "react";
 import { extend } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
-import Karma from "../../fonts/Lacquer.json";
-import useTextPropsStore from "../../utils/store";
+import Karma from "../fonts/Lacquer.json";
+import useTextPropsStore from "../utils/store";
 
 extend({ TextGeometry });
 
