@@ -1,35 +1,31 @@
-import React, { useRef, useEffect, useMemo } from "react";
-import { extend } from "@react-three/fiber";
-import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
-import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
-import Karma from "../fonts/Lacquer.json";
-import useTextPropsStore from "../utils/store";
+import React from "react";
+import { Text3D, Center, useMatcapTexture } from "@react-three/drei";
 
-extend({ TextGeometry });
+const TextGeo = () => {
+    const [matCapTexture] = useMatcapTexture('9F1A27_F1AF7F_CD5845_D08441', 256)
+    //8A6565_2E214D_D48A5F_ADA59C   9E7C7E_DDCBD0_351D20_683B38
 
-const TextGeo = ({ position = [-3, 2, 0] }) => {
-    const meshRef = useRef();
-    const { textProps } = useTextPropsStore();
 
-    const font = useMemo(() => new FontLoader().parse(Karma), []);
-
-    useEffect(() => {
-        if (meshRef.current) {
-            const geometry = new TextGeometry(textProps.message, {
-                font,
-                size: textProps.size,
-                depth: textProps.depth,
-            });
-
-            // Dispose old geometry to avoid memory leaks
-            meshRef.current.geometry?.dispose();
-            meshRef.current.geometry = geometry;
-
-            meshRef.current.material.color.set(textProps.color);
-        }
-    }, [textProps]);
-
-    return <mesh ref={meshRef} position={position} />;
+    return (
+        <>
+            <Center>
+                <Text3D
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={0.85}
+                    height={0.2}
+                    curveSegments={12}
+                    bevelEnabled
+                    bevelThickness={0.02}
+                    bevelSize={0.02}
+                    bevelOffset={0}
+                    bevelSegments={5}
+                >
+                    Hi i'm Setare
+                    <meshMatcapMaterial matcap={matCapTexture} />
+                </Text3D>
+            </Center>
+        </>
+    )
 };
 
 export default TextGeo;
