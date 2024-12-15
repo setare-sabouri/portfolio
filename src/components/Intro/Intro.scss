@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+canvas {
+  background-color: $canvas-color;
+  width: 100vw;
+  height: 100vh;
+}
