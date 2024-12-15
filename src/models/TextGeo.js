@@ -29,7 +29,7 @@ const TextGeo = ({ position = [-3, 2, 0] }) => {
         }
     }, [textProps]);
 
-    return <mesh ref={meshRef} position={position} />;
+    return <mesh ref={meshRef} position={position} >;
 };
 
-export default TextGeo;
+        export default TextGeo;

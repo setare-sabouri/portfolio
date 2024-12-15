@@ -1,7 +1,6 @@
 // src/pages/LandingPage.js
 import React, { Suspense } from 'react';
-import { IntroText } from '../components/IntroText/IntroText';
-import Button from '../models/Button';
+import { Intro } from '../components/Intro/Intro';
 import { Canvas } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 
@@ -10,9 +9,8 @@ function LandingPage() {
     return (
         <Canvas >
             <Suspense fallback={null}>
-                <Environment preset="sunset" background />
-                <IntroText />
-                <Button />
+                <Environment preset="city" background />
+                <Intro />
             </Suspense>
         </Canvas>
 
