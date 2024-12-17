@@ -15,7 +15,7 @@ export const About = () => {
                 <div className="right-head image-blur"></div>
                 <div className='right-head content-on-blur'>
                     <h1 >Welcome to my portfolio!</h1>
-                    <p class="">
+                    <p>
 
                         Currently under development, <br />
                         this space reflects my journey as a front-end developer, where creativity and learning go hand in hand.<br />
@@ -25,7 +25,7 @@ export const About = () => {
                         Front-end development allows me to bring ideas to life through design and functionality, and it’s truly what I love doing.
 
                         When I’m not coding, you’ll often find me painting, exploring art, hiking, biking, or discovering fun new life hacks.<br />
-                        <h5> Creativity fuels everything I do — whether it’s on a canvas or in code.</h5>
+                        Creativity fuels everything I do — whether it’s on a canvas or in code.
 
 
                     </p>
