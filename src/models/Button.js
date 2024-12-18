@@ -18,7 +18,6 @@ const Button = () => {
 
 
 
-    console.log(buttonGLTF)
     return (
         <group ref={buttonRef} onClick={handleClick} dispose={null} position={[0, -2, 0]}>
             <mesh castShadow receiveShadow geometry={nodes.Object_4.geometry} material={materials['Base']} />
