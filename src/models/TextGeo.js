@@ -1,8 +1,6 @@
 import React from "react";
 import { Text3D, Center } from "@react-three/drei";
 import { useTextMatCap } from "../Utils/hooks/useMatcap";
-
-
 const TextGeo = () => {
 
     return (
@@ -21,7 +19,6 @@ const TextGeo = () => {
                 >
                     Hi, i'm Setare
                     <meshMatcapMaterial matcap={useTextMatCap()[0]} />
-
                 </Text3D>
             </Center>
         </>
