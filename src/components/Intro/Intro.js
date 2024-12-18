@@ -9,7 +9,7 @@ export const Intro = () => {
     <>
       <Perf position="top-left" />
       <TextGeo />
-      <Donut />
+      {/* <Donut /> */}
       <Button />
     </>
   );
