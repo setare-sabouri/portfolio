@@ -19,7 +19,7 @@ const TextGeo = () => {
                     bevelOffset={0}
                     bevelSegments={5}
                 >
-                    Hi i'm Setare
+                    Hi, i'm Setare
                     <meshMatcapMaterial matcap={useTextMatCap()[0]} />
 
                 </Text3D>
