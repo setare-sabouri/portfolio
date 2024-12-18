@@ -4,12 +4,12 @@ import { Intro } from '../components/Intro/Intro';
 import { Canvas } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import { OrbitControls } from '@react-three/drei';
-
+import Loading from '../components/Loading/Loading';
 function LandingPage() {
 
     return (
         <Canvas >
-            <Suspense fallback={null}>
+            <Suspense fallback={Loading}>
                 <OrbitControls />
                 <Environment preset="city" />
                 <Intro />
