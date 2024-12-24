@@ -1,11 +1,13 @@
 import React from "react";
 import { Text3D } from "@react-three/drei";
 import { useTextMatCap } from "../hooks/useMatcapMaterial";
+import { Center } from '@react-three/drei';
+
 const TextGeo = () => {
 
     const material = useTextMatCap()
     return (
-        <>
+        <Center>
             <Text3D
                 material={material}
                 font="./fonts/helvetiker_regular.typeface.json"
@@ -20,7 +22,7 @@ const TextGeo = () => {
             >
                 Hi, i'm Setare
             </Text3D>
-        </>
+        </Center>
     )
 };
 

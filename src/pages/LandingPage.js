@@ -8,13 +8,14 @@ import Loading from '../components/Loading/Loading';
 function LandingPage() {
 
     return (
-        <Canvas >
-            <Suspense fallback={Loading}>
+        <Suspense fallback={<Loading />}>
+            <Canvas >
                 <OrbitControls />
                 <Environment preset="city" />
                 <Intro />
-            </Suspense>
-        </Canvas>
+            </Canvas>
+        </Suspense>
+
 
     );
 }

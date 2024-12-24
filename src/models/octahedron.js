@@ -17,7 +17,7 @@ const Octahedron = ({ count }) => {
     return (
         <>
 
-            {[...Array(count)].map((value, index) => (
+            {[...Array(count)].map((_, index) => (
                 <mesh
                     ref={(thisMesh) => (diamonds.current[index] = thisMesh)}
                     key={index}
