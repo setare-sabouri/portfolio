@@ -1,5 +1,6 @@
 import React from "react";
 import "./resume.css"
+
 export const DownloadButton = ({ fileURL }) => {
     const downloadFile = () => {
         window.open(fileURL, "_blank");

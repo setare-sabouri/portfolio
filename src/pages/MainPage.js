@@ -1,19 +1,17 @@
 // src/pages/MainPage.js
 import React from 'react';
-import { Navbar } from '../components/navbar/Navbar';
-import { About } from '../components/main/about';
-import { Skills } from '../components/skills/skills';
-import { Projects } from '../components/Projects/Projects';
-
+import { Navbar } from '../components/Mainpage/navbar/Navbar';
+import { Link, Outlet } from 'react-router-dom';
 function MainPage() {
+
+
     return (
         <div className="container-fluid h-100">
             <Navbar />
-            <div className="about">
-                <About />
-            </div>
-            <Projects />
-            <Skills />
+            <Link to="projects">projects</Link>
+            <Link to="skills">skills</Link>
+            <Link to="resume">Resume</Link >
+            <Outlet />
         </div>
     );
 }

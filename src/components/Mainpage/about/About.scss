@@ -1,0 +1,105 @@
+.about {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  width: 97vw;
+}
+
+.image-wrapper {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    animation: fadeIn 5s;
+  }
+}
+
+.img-fluid {
+  float: left;
+  height: 100%;
+}
+
+.image-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 130%;
+  background-color: rgb(207, 201, 201);
+  background-size: cover;
+  filter: blur(30px);
+  transition: filter 0.5s ease-in-out;
+}
+
+.right-head {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+  &.content-on-blur {
+    z-index: 2;
+  }
+}
+
+.info-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding: 0 1rem;
+
+  h1,
+  p {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+}
+
+// Mobile devices
+@media screen and (max-width: 480px) {
+  .image-wrapper {
+    position: absolute;
+    width: 177%;
+    left: -60%;
+  }
+
+  .image-blur {
+    filter: blur(35px);
+    width: 64%;
+  }
+
+  .right-head {
+    left: 50%;
+    font-size: 70%;
+  }
+}
+
+// Tablets & large phones
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .image-wrapper {
+    position: absolute;
+    width: 135%;
+    left: -35%;
+  }
+
+  .image-blur {
+    filter: blur(30px);
+    width: 60%;
+  }
+
+  .right-head {
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+  }
+}
