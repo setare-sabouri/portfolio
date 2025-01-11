@@ -1,0 +1,20 @@
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Add some spacing between the links */
+  margin-top: 20px; /* Optional: Add some space from the navbar */
+}
+
+.links-container a {
+  font-size: 1.2rem; /* Adjust the size */
+  color: black; /* Change color */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #a5bcd4;
+    color: white;
+  }
+}
