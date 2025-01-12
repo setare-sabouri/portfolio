@@ -1,12 +1,12 @@
 import React from "react";
 import { FaGithub } from 'react-icons/fa';
 import projects from "./DataProjects";
-import "./projects.css";
+import "./projects.scss";
 import { Link } from "react-router-dom";
 
 function Projects() {
     return (
-        <div className="projects">
+        <div>
             <h2>Projects</h2>
             <div className="projects-grid">
                 {projects.map((project) => (
