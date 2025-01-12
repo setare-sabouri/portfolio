@@ -1,14 +1,18 @@
 import React from 'react'
-import "./navbar.css"
+import "./navbar.scss"
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg">
-            <h1>Setareh Sabouri</h1>
+            <Link to="/main" style={{ textDecoration: 'none' }}>
+                <h1>Setareh Sabouri</h1>
+            </Link>
+
+
             <button className="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-
             <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul className='navbar-nav mr-auto '>
                     <li className='nav-item active'>

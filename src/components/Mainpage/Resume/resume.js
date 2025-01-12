@@ -1,5 +1,5 @@
 import React from "react";
-import "./resume.css"
+import "./resume.scss"
 
 export const DownloadButton = ({ fileURL }) => {
     const downloadFile = () => {
@@ -7,7 +7,7 @@ export const DownloadButton = ({ fileURL }) => {
     };
 
     return (
-        <div className="container-resume">
+        <div >
             <button className="btn btn-primary" onClick={downloadFile}>
                 Download CV
             </button>

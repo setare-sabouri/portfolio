@@ -5,10 +5,13 @@ import { Link, Outlet } from 'react-router-dom';
 import './MainPage.scss';
 function MainPage() {
 
-
     return (
-        <div className="container-fluid h-100">
+        <>
             <Navbar />
+            <div className='children'>
+                <Outlet />
+
+            </div>
 
             <div className="links-container">
                 <Link to="projects">projects</Link>
@@ -16,8 +19,7 @@ function MainPage() {
                 <Link to="resume">Resume</Link >
             </div>
 
-            <Outlet />
-        </div>
+        </>
     );
 }
 

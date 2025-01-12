@@ -1,15 +1,14 @@
 .links-container {
   display: flex;
   justify-content: center;
-  gap: 2rem; /* Add some spacing between the links */
-  margin-top: 20px; /* Optional: Add some space from the navbar */
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .links-container a {
-  font-size: 1.2rem; /* Adjust the size */
-  color: black; /* Change color */
+  font-size: 1.2rem;
+  color: black;
   text-decoration: none;
-  padding: 10px 20px;
   border-radius: 5px;
   transition: all 0.3s ease;
 
@@ -17,4 +16,11 @@
     background-color: #a5bcd4;
     color: white;
   }
+}
+.children {
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
