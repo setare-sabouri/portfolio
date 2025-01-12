@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Projects() {
     return (
-        <div>
+        <div className="projects-container">
             <h2>Projects</h2>
             <div className="projects-grid">
                 {projects.map((project) => (

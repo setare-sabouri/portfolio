@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  height: 10vh;
+  height: 10svh;
   align-items: flex-start;
 }
 
@@ -22,9 +22,9 @@
   }
 }
 .children {
-  height: 70vh;
-  width: 100vw;
+  height: 70svh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
