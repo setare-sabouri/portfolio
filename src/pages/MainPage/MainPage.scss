@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding-bottom: 2rem;
+  height: 10vh;
+  align-items: flex-start;
 }
 
 .links-container a {
@@ -18,7 +19,7 @@
   }
 }
 .children {
-  height: 75vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   justify-content: center;
