@@ -15,7 +15,7 @@ function MainPage() {
 
             <div className="links-container">
                 <Link to="projects">projects</Link>
-                <Link to="skills">skills</Link>
+                {/* <Link to="skills">skills</Link> */}
                 <Link to="resume">Resume</Link >
             </div>
 
