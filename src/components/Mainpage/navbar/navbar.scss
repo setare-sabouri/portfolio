@@ -1,0 +1,24 @@
+.navbar {
+  height: 20vh;
+  z-index: 10;
+  padding: 2rem;
+}
+nav h1 {
+  color: white;
+}
+button span {
+  color: white;
+}
+
+.nav-link i {
+  color: rgb(242, 242, 255);
+}
+
+.nav-link:hover .fa_custom {
+  transform: rotateY(360deg);
+  transition: transform 0.6s ease-in-out;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
