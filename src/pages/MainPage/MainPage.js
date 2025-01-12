@@ -6,11 +6,10 @@ import './MainPage.scss';
 function MainPage() {
 
     return (
-        <>
+        <div className='containerMain'>
             <Navbar />
             <div className='children'>
                 <Outlet />
-
             </div>
 
             <div className="links-container">
@@ -19,7 +18,7 @@ function MainPage() {
                 <Link to="resume">Resume</Link >
             </div>
 
-        </>
+        </div >
     );
 }
 
