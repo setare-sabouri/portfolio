@@ -26,7 +26,7 @@ function App() {
           <Route path='resume' element={<DownloadButton />} />
           <Route path="projects" >
             <Route index element={<Projects />} />
-            {/* <Route path=':id' element={<ProjectDetail />} /> */}
+            <Route path=':id' element={<ProjectDetail />} />
           </Route>
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
