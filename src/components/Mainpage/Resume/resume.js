@@ -1,9 +1,9 @@
 import React from "react";
 import "./resume.scss"
-
-export const DownloadButton = ({ fileURL }) => {
+import resume from './resume.pdf'
+export const Resume = ({ fileURL }) => {
     const downloadFile = () => {
-        window.open(fileURL, "_blank");
+        window.open(resume, "_blank");
     };
 
     return (
