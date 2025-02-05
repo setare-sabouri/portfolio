@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import MainPage from './pages/MainPage/MainPage';
-import { Projects } from './components/Mainpage/Projects/Projects';
+import Projects from './components/Mainpage/Projects/Projects';
 import ProjectDetail from './components/Mainpage/ProjectDetail/ProjectDetail';
 import { About } from './components/Mainpage/about/About';
 import { Skills } from './components/Mainpage/skills/skills';

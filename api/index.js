@@ -1,9 +1,6 @@
-import express from "express";
-import cors from "cors";
-import { PrismaClient } from "@prisma/client";
-import dotenv from "dotenv";
-
-dotenv.config();
+const express = require('express');
+const cors = require('cors');
+const { PrismaClient } = require('@prisma/client');
 
 const app = express();
 const prisma = new PrismaClient();
@@ -36,5 +33,4 @@ app.get("/projects/:id", async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+module.exports = app;
