@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { FaGithub } from 'react-icons/fa';
 // import projects from "./DataProjects";
 import "./projects.scss";
@@ -10,7 +9,7 @@ function Projects() {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/projects")
+        fetch(`/api/projects`)
             .then((response) => response.json())
             .then((data) => setProjects(data))
             .catch((error) => console.error("Error fetching projects:", error));

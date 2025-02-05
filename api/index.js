@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
 import { PrismaClient } from "@prisma/client";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const prisma = new PrismaClient();
@@ -14,6 +17,7 @@ app.get("/projects", async (req, res) => {
         const projects = await prisma.project.findMany();
         res.json(projects);
     } catch (error) {
+        console.error("Error fetching projects:", error);
         res.status(500).json({ error: "Error fetching projects" });
     }
 });
@@ -27,9 +31,10 @@ app.get("/projects/:id", async (req, res) => {
         if (!project) return res.status(404).json({ error: "Project not found" });
         res.json(project);
     } catch (error) {
+        console.error("Error fetching project:", error);
         res.status(500).json({ error: "Error fetching project" });
     }
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
