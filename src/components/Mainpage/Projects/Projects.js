@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { FaGithub } from 'react-icons/fa';
-import projects from "./DataProjects";
+// import projects from "./DataProjects";
 import "./projects.scss";
 import { Link } from "react-router-dom";
 
 function Projects() {
+
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:3001/projects")
+            .then((response) => response.json())
+            .then((data) => setProjects(data))
+            .catch((error) => console.error("Error fetching projects:", error));
+    }, []);
+
+
     return (
+
         <div className="projects-container">
             <h2>Projects</h2>
             <div className="projects-grid">
@@ -31,6 +44,7 @@ function Projects() {
             </div>
         </div>
     );
+
 }
 
 export { Projects };
