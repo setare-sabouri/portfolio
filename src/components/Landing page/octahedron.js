@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
+
 import { useTextMatCap } from "../../hooks/useMatcapMaterial";
 import { CreatDiamondGeometry } from "../../Utils/CreatDiamondGeometry";
 import { useFrame } from '@react-three/fiber';
